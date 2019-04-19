@@ -18,3 +18,9 @@ def determinans(det):
 
 print(determinans(det))
 
+
+#or
+def determinans(det):
+    while det>20 and det<30:
+        return det
+  
