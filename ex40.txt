@@ -12,8 +12,6 @@ def determinans(det):
         elif det<10 or det>20:
             m=np.random.randint(0,100,(2,2))
 
-
-
 print(determinans(det))
 
 
@@ -22,7 +20,6 @@ def determinans(det):
     while det>20 and det<30:
         return det
   
-
 
 #or
 def determinans(det):
