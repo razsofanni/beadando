@@ -6,3 +6,12 @@ dict={'A':'.-', 'B':'-...', 'C':'-.-.', 'D':'-..', 'E':'.', 'F':'..-.', 'G':'--.
       '?':'..--..', '/':'-..-.', '-':'-....-',
       '(':'-.--.', ')':'-.--.-'}
 
+szoveg=("This is my programm.")
+
+s=szoveg.upper()
+while len(szoveg)!=0:
+
+      for s in dict.items():
+            if s in dict.keys():
+                print(dict.values())
+
