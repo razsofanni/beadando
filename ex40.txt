@@ -28,4 +28,7 @@ def determinans(det):
     while det<20 or det>30:
         uj_m=np.random.randint(0,100,(2,2))
         det1=((m[0][0]+m[1][1])-(m[0][1]+m[1][0]))
+
+
+#######
        
