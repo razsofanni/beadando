@@ -17,4 +17,4 @@ while len(szoveg)!=0:
       for s in dict.items():
             if s in dict.keys():
                 print(dict.values())
-#
+
