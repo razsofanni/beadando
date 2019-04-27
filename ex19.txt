@@ -19,7 +19,7 @@ while len(szoveg)!=0:
                 print(dict.values())
 
 
-#
+
 
 
 
