@@ -18,8 +18,3 @@ while len(szoveg)!=0:
             if s in dict.keys():
                 print(dict.values())
 
-
-
-
-
-y
