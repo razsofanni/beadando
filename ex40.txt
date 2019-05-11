@@ -1,31 +1,33 @@
 import numpy as np
 
-
-m = np.random.randint(0,100,(2,2))
-
-det=((m[0][0]+m[1][1])-(m[0][1]+m[1][0]))
-
-def determinans(det):
-    while True:
-        if det>10 and det<20:
-            return det
-        elif det<10 or det>20:
-            m=np.random.randint(0,100,(2,2))
-
-print(determinans(det))
+LOWER = 10
+UPPER = 20
 
 
-#or
-def determinans(det):
-    while det>20 and det<30:
-        return det
-  
+def get_matrix(lower, upper):
+    (a, b, c, d) = np.random.randint(0, 100, 4)
+    det = (a * d) - (b * c)
+    if det >= lower and det <= upper:
+        return (a, b, c, d)
+    else:
+        # cnt = 0
+        while True:
+            # cnt += 1
+            # print("#", cnt)
+            (a, b, c, d) = np.random.randint(0, 100, 4)
+            det = (a * d) - (b * c)
+            if det >= lower and det <= upper:
+                return (a, b, c, d)
 
-#or
-def determinans(det):
-    while det>20 and det<30:
-        return det
-    while det<20 or det>30:
-        uj_m=np.random.randint(0,100,(2,2))
-        det1=((m[0][0]+m[1][1])-(m[0][1]+m[1][0])
 
+def main():
+    m = get_matrix(LOWER, UPPER)
+    print(m)
+    a, b, c, d = m
+    det = (a * d) - (b * c)
+    print(a, b, c, d)
+    print(det)
+
+#############################################################################
+
+main()
