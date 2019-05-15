@@ -1,35 +1,42 @@
 import numpy as np
 
-LOWER = 10
-UPPER = 20
+alsok = 10
+felsok = 20
 
 
-def get_matrix(lower, upper):
+def get_matrix(also, felso):
     (a, b, c, d) = np.random.randint(0, 100, 4)
     det = (a * d) - (b * c)
-    if det >= lower and det <= upper:
+    if det >= also and det <= felso:
         return (a, b, c, d)
     else:
         # cnt = 0
         while True:
-            # cnt += 1
-            # print("#", cnt)
+
+
             (a, b, c, d) = np.random.randint(0, 100, 4)
             det = (a * d) - (b * c)
-            if det >= lower and det <= upper:
+            if det >= also and det <= felso:
                 return (a, b, c, d)
 
 
 def main():
-    m = get_matrix(LOWER, UPPER)
-    print(m)
+    m = get_matrix(alsok, felsok)
+
+    #print(m)
     a, b, c, d = m
+
+    eredmeny = [ [a, b],
+               [c, d] ]
+
     det = (a * d) - (b * c)
-    print(a, b, c, d)
+    #print(a, b, c, d)
     print(det)
 
-#############################################################################
+    print(eredmeny)
+
+
+
+
 
 main()
-
-
