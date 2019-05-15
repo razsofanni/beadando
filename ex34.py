@@ -7,8 +7,8 @@ def zarojelek_ellenorzese(sor):
             cnt -= 1
             if cnt < 0:
                 return False
-            #
-    # endfor
+
+
     return cnt == 0
 
 
@@ -16,7 +16,7 @@ def elemez(sor):
     zarojek = zarojelek_ellenorzese(sor)
     if zarojek == False:
         return False
-    #
+
     if (not sor.endswith("')")) and (not sor.endswith("');")):
         return False
 
@@ -40,14 +40,30 @@ def elemez(sor):
 
 
 def main():
-    sor = "if(a<b):print('hello');"
-    eredmeny = elemez(sor)
 
-    print(eredmeny)
 
-#############################################################################
+
+
+    f = open("be.txt", "r")
+
+
+    for sor in f:
+        sor = sor.rstrip("\n")
+        eredmeny = elemez(sor)
+        if eredmeny:
+            print("A sor '{0}' helyes.".format(sor))
+        else:
+            print("A sor '{0}' NEM helyes.".format(sor))
+        # vege if
+    # vege for
+
+    f.close()
+
+
 
 main()
+
+
 
 
 
