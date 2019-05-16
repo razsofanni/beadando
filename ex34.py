@@ -1,3 +1,4 @@
+
 def zarojelek_ellenorzese(sor):
     cnt = 0
     for c in sor:
@@ -62,6 +63,8 @@ def main():
 
 
 main()
+
+
 
 
 
