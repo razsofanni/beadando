@@ -1,0 +1,5 @@
+if(a<b):print('hello');
+if(a<b):print('hello')
+(a<b):print('hello');
+if(a<b):print('');
+if(a<b):print('hello'));
