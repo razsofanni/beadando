@@ -62,18 +62,16 @@ inv_morse = {
 
 
 def main():
-    szoveg = ("Hello World, this is a simple sentences.").upper()
-
+    szoveg=input("A szöveg melyet át szeretne alakítani Morse kódra: ").upper()
     for c in szoveg:
         if c == " ":
             print("\t", end="")
         else:
             print(morse[c], end="")
             print(" ", end="")
-
-    kod = ".... . .-.. .-.. ---"
+    kod = input("A Morse kód amit át szeretne alakítani szöveggé: ")
     kodok = kod.split()
-    print(kodok)
+    #print(kodok)
 
     for mc in kodok:
         print(inv_morse[mc], end='')
